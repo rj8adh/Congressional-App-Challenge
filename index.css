@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    color: white;
+    background: #16a689;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+.search{
+    display: block;
+    margin: auto;
+}
+input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background: #0b7a63;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: #094d3a;
+}
+.content{
+    border: 1px solid black;
+    background: white;
+
+}
+
