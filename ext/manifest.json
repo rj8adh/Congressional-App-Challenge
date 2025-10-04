@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Lock in",
+    "version": "1.0",
+    "description": "blocks distracting websites like youtube, instagram, etc. to help people lock in",
+    "permissions": ["tabs", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        {
+        "resources": [],
+        "matches": ["<all_urls>"]
+        }
+    ]
+}
+      
