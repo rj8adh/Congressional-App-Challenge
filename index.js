@@ -30,14 +30,3 @@ async function search()
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-

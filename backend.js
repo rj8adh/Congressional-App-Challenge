@@ -9,14 +9,14 @@ const app = express();
 app.use(express.json());
 
 app.use(cors());
-dotenv.config();
+dotenv.config({ override: true });
 
 const openai = new OpenAI({
-    apiKey: process.env['OPENAI_API_KEY']
+    apiKey: process.env.OPENAI_API_KEY
 });
 
 console.log("API Key:", process.env.OPENAI_API_KEY ? "Loaded" : "Not loaded");
-
+console.log(process.env.OPENAI_API_KEY)
 
 app.post("/api/chat", async (req, res) => {
     console.log("Received request body:", req.body);
@@ -48,13 +48,3 @@ app.post("/api/chat", async (req, res) => {
 });
 
 app.listen(5000, () => console.log('Server running on http://localhost:5000'))
-
-
-
-
-
-
-
-
-
-
